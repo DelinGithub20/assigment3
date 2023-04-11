@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Covid-19 Tracker</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h3>Covid-19 Tracker</h3>
+      <div class="place-search">
+        <input type="text" name="search" id="search" placeholder="Search..." />
+        <button id="myBtn">Search</button>
+      </div>
+      <div class="container">
+        <div class="box-case">
+          <i data-feather="activity"></i>
+          <p class="title-active-case">Total Kasus Aktif</p>
+          <p id="case-active">0</p>
+        </div>
+
+        <div class="box-case">
+          <i data-feather="plus-circle"></i>
+          <p class="title-active-case">Kasus Baru</p>
+          <p id="case-new">0</p>
+        </div>
+
+        <div class="box-case">
+          <i data-feather="bar-chart-2"></i>
+          <p class="title-active-case">Kasus Selesai</p>
+          <p id="case-recovered">0</p>
+        </div>
+
+        <div class="box-case">
+          <i data-feather="file"></i>
+          <p class="title-active-case">Total Kasus</p>
+          <p id="case-total">0</p>
+        </div>
+
+        <div class="box-case">
+          <i data-feather="bar-chart-2"></i>
+          <p class="title-active-case">Total Kematian</p>
+          <p id="case-total-deaths">0</p>
+        </div>
+
+        <div class="box-case">
+          <i data-feather="file"></i>
+          <p class="title-active-case">Total Tes</p>
+          <p id="case-total-tests">0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- feather icon  -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JS -->
+    <script src="search.js"></script>
+  </body>
+</html>
